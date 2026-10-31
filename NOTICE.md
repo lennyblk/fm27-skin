@@ -11,8 +11,10 @@ included in [OFL-Poppins.txt](skin/fonts/OFL-Poppins.txt).
 
 The styles reference Football Manager's native UI classes, variables and
 resources. Those resources remain supplied by the user's installed game.
-This repository includes no game bundles, extracted UEFA font binaries,
-club logos, player photographs or save files.
+The installable skin includes no game bundles, extracted UEFA font binaries,
+standalone club logos, player photographs or save files. The repository cover
+includes an in-game screenshot; the game UI, club marks and player likeness
+shown there remain their respective owners' material.
 
 The Champions and Champions Serif Mono font files used during private testing
 are excluded. The public skin resolves the corresponding competition font

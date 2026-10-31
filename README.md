@@ -1,5 +1,7 @@
 # FM Dugout skin for Football Manager 27
 
+![FM Dugout Template Skin cover showing a player profile in the skin](assets/cover.png)
+
 A dark Navy and Volt skin built from plain Unity stylesheets (USS). Shared
 colours, typography and control settings live in `skin/theme.uss`; component
 styles are grouped by the part of the game they affect.
