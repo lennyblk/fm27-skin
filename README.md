@@ -5,7 +5,7 @@ colours, typography and control settings live in `skin/theme.uss`; component
 styles are grouped by the part of the game they affect.
 
 The skin needs no build step, Python, BepInEx or FM Dugout application to use.
-This is a work in progress, last tested against FM27 build 27.0.0.2486716.
+This is a work in progress, last tested against FM27 Launch Preview.
 
 ## Install
 
