@@ -484,4 +484,5 @@ match rendering remain intact. Keep a backup before replacing an installed copy.
 
 Source parsing or a successful reload alone does not establish that every
 binding, screen and interaction state renders correctly. Installation paths and
-public support boundaries are in the [repository README](../README.md).
+public support boundaries are in the
+[repository README](https://github.com/lotsgon/fm27-dugout-skin-public#readme).

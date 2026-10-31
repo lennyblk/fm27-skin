@@ -9,11 +9,19 @@ This is a work in progress, last tested against FM27 Launch Preview.
 
 ## Install
 
-1. Download or clone this repository.
-2. Copy the **contents of `skin/`** into a folder named `FM Dugout` inside your
-   FM27 user-data `skins` folder. `skin.json` and `main.uss` must be directly
-   inside `skins/FM Dugout/`, rather than inside another nested `skin` folder.
-3. Open FM27 Preferences, choose **FM Dugout** in the skin selector and apply it.
+1. [Download FM Dugout Template.zip](https://github.com/lotsgon/fm27-dugout-skin-public/releases/download/v0.1.0-preview.1/FM-Dugout-Template.zip).
+2. Extract the ZIP and move the **FM Dugout Template** folder into your FM27
+   user-data `skins` folder. `skin.json` and `main.uss` must be directly inside
+   `skins/FM Dugout Template/`, without another nested `skin` folder.
+3. Open FM27 Preferences, choose **FM Dugout Template** in the skin selector
+   and apply it.
+
+The ZIP includes installation instructions and the full editing guide. See the
+[release page](https://github.com/lotsgon/fm27-dugout-skin-public/releases/tag/v0.1.0-preview.1)
+for download details and known limitations.
+
+If you prefer to clone this repository, copy the contents of `skin/` into a
+folder named `FM Dugout Template` in the same location.
 
 Typical user-data locations are:
 
