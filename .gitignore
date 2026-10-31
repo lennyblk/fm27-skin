@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+*.zip
+*.log
+.env
+.env.*
+/recovery/
+/evidence/
+/skills/
+__pycache__/
