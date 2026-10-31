@@ -36,9 +36,23 @@ Edit the installed files, save, then reload or reapply the skin in FM.
 | `styles/fm-defaults.uss` | Native football/data defaults |
 | `main.uss` | Ordered imports; preserve their order |
 
-See [the editing guide](skin/README.md) for token roles and stylesheet ownership.
-Use paired foreground/background tokens for filled controls. Keep club colours,
-results, player status and other football meanings separate from the UI palette.
+The [full editing guide](skin/README.md) explains the theme's shared settings
+and the component behaviour behind them:
+
+- [Palette and global text](skin/README.md#theme-palette-and-global-text), including alpha companions and semantic colours.
+- [Surfaces, borders and corners](skin/README.md#surfaces-borders-and-corners), with separate card, dialog and popup settings.
+- [Buttons, fields and selection](skin/README.md#buttons-fields-and-selection), including radio, checkbox, switch and disabled states.
+- [Navigation and menus](skin/README.md#navigation-bookmarks-and-menus), plus bookmarks and start-screen settings.
+- [Fonts and scoreboards](skin/README.md#fonts-and-competition-scoreboards), keeping native competition fonts separate from the skin's typography.
+- [Club/player headers](skin/README.md#club-and-player-headers), including colour backplates and gradient geometry.
+- [Messages](skin/README.md#messages-and-news), [tables and charts](skin/README.md#tables-badges-and-data-charts), [tactics and recruitment](skin/README.md#tactics-recruitment-and-training), and [match presentation](skin/README.md#match-presentation).
+- [Compact layout settings](skin/README.md#compact-layout-settings) for dense tables, training, staff, finance and other fixed native lanes.
+- [Editing examples](skin/README.md#editing-examples-and-checks) and what to check after reloading.
+
+Keep filled controls paired with their foreground through every state. Club
+colours, results and player status retain separate football meanings. Personal
+changes can live in `custom.uss`; broader theme palettes belong in `theme.uss`
+or a token override imported immediately after it.
 
 ## Known limitations
 
