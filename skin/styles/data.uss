@@ -1585,51 +1585,7 @@
   display: none;
 }
 
-/* Center category labels on the native radar anchors, preserving the existing live bindings.
- */
-.attributespiderchartplayerreport.fmspiderchartlarge #Label,
-#MatchPlayerReport #AttributeSpiderChart .fmspiderchartlarge #Label {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 200px;
-  height: 24px;
-  translate: -50% -50%;
-  white-space: nowrap;
-  -unity-text-align: middle-center;
-  overflow: visible;
-}
-
-/* Align category names with the existing chart anchors, matching the prior working radar treatment.
- */
-.attributespiderchartplayerreport.fmspiderchartlarge .margin-right-global-gap-extra-small,
-.attributespiderchartplayerreport.fmspiderchartlarge .margin-left-global-gap-extra-small,
-.attributespiderchartplayerreport.fmspiderchartlarge .margin-left-global-gap-small,
-#MatchPlayerReport #AttributeSpiderChart .fmspiderchartlarge .margin-right-global-gap-extra-small,
-#MatchPlayerReport #AttributeSpiderChart .fmspiderchartlarge .margin-left-global-gap-extra-small,
-#MatchPlayerReport #AttributeSpiderChart .fmspiderchartlarge .margin-left-global-gap-small {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* Anchor boxes do not push category names off the polygon; labels retain their own visible size.
- */
-.attributespiderchartplayerreport.fmspiderchartlarge > *,
-#MatchPlayerReport #AttributeSpiderChart .fmspiderchartlarge > * {
-  width: 0;
-  min-width: 0;
-  max-width: 0;
-  height: 0;
-  min-height: 0;
-  max-height: 0;
-  overflow: visible;
-}
+/* Let FM position the category labels at their native chart anchors. */
 
 /* Two live comparison polygons over muted bands: series 1 is the right player; series 2 is the
  * left player. Both consume the same identities as comparison bars and copy.
