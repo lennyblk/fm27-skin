@@ -78,6 +78,8 @@ or a token override imported immediately after it.
 - Competition scoreboards use fonts supplied by the installed game. UEFA fonts
   are not included. Native font rendering can differ from the intended outlines;
   this public copy's native-font configuration still needs an in-game check.
+- The bundled Poppins files do not include Greek characters. Greek rendering
+  and the game's font fallback need further testing; Greek text may be missing.
 - Not every screen, resolution, language or interaction state has been verified.
   Game updates can change native classes and bindings.
 
