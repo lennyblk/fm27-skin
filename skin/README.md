@@ -234,7 +234,7 @@ the native international role; dynamic score/team choices remain game-owned.
 
 UCL and UWCL roles reference `--ucl-family-regular` and `--uwcl-family-regular`.
 No extracted UEFA font binaries are included. Native font outlines can differ
-from their intended appearance; this public configuration needs an in-game check.
+from their intended appearance; Champions scoreboard fonts are a known unresolved issue.
 Changing the main skin font should not replace every competition's scorebug face.
 
 ## Club and player headers
@@ -493,3 +493,39 @@ Source parsing or a successful reload alone does not establish that every
 binding, screen and interaction state renders correctly. Installation paths and
 public support boundaries are in the
 [repository README](https://github.com/lotsgon/fm27-dugout-skin-public#readme).
+
+## Player-profile radar
+
+On screens above 1080p, use Medium or Small information display size in FM
+Preferences to expose the player-profile polygon. The radar uses FM's category
+labels and live player values. To show its numbers, uncomment the supplied
+`#Value` rule in `custom.uss`, save and reload the skin.
+
+## Greek text and alternative fonts
+
+The bundled Poppins files do not cover Greek. To try a Greek-capable font, place
+its regular and bold files in `fonts/`, then change these values in `theme.uss`:
+
+```css
+--typography-family-primary: url("fonts/YourFont-Regular.ttf");
+--typography-family-thematic: url("fonts/YourFont-Bold.ttf");
+```
+
+The skin's primary, display and navigation font roles follow these native
+family tokens. Use the actual filenames and reload the skin after saving.
+Greek rendering with a replacement font has not been independently verified.
+
+## Latest changes — 1 November 2026
+
+- Improved clock, navigation text and icon contrast.
+- Restored truncated player-name tooltip text and native radar label positioning.
+- Added optional numerical radar values in `custom.uss`.
+- Improved player and club headers while retaining club summary cards.
+- Fixed Tactics selector, role-control, player-name and arrow hover states.
+- Kept transfer-value chips visible on highlighted Squad rows.
+- Matched position colours across Squad and Tactics and restored control spacing.
+- Aligned public and private skin files, including font scaling; removed loose
+  Champions fonts. Both copies use the game's competition font resources.
+
+The user has accepted the aligned skin in-game. Champions font rendering remains
+unresolved. Coverage does not extend to every resolution, language or UI state.

@@ -11,7 +11,7 @@ This is a work in progress, last tested against FM27 Launch Preview.
 
 ## Install
 
-1. [Download FM Dugout Template.zip](https://github.com/lotsgon/fm27-dugout-skin-public/releases/download/v0.1.0-preview.1/FM-Dugout-Template.zip).
+1. [Download FM Dugout Template.zip](https://github.com/lotsgon/fm27-dugout-skin-public/releases/download/v0.1.0-preview.2/FM-Dugout-Template.zip).
 2. Extract the ZIP and move the **FM Dugout Template** folder into your FM27
    user-data `skins` folder. `skin.json` and `main.uss` must be directly inside
    `skins/FM Dugout Template/`, without another nested `skin` folder.
@@ -19,7 +19,7 @@ This is a work in progress, last tested against FM27 Launch Preview.
    and apply it.
 
 The ZIP includes installation instructions and the full editing guide. See the
-[release page](https://github.com/lotsgon/fm27-dugout-skin-public/releases/tag/v0.1.0-preview.1)
+[release page](https://github.com/lotsgon/fm27-dugout-skin-public/releases/tag/v0.1.0-preview.2)
 for download details and known limitations.
 
 If you prefer to clone this repository, copy the contents of `skin/` into a
@@ -77,7 +77,7 @@ or a token override imported immediately after it.
   insufficient contrast.
 - Competition scoreboards use fonts supplied by the installed game. UEFA fonts
   are not included. Native font rendering can differ from the intended outlines;
-  this public copy's native-font configuration still needs an in-game check.
+  Champions scoreboard fonts remain a known issue.
 - The bundled Poppins files do not include Greek characters. Greek rendering
   and the game's font fallback need further testing; Greek text may be missing.
 - Not every screen, resolution, language or interaction state has been verified.
@@ -97,3 +97,18 @@ SEGA or UEFA product.
 
 After changing **Text Scaling** in FM Preferences, reload or reapply the skin
 to apply the new size throughout the interface.
+
+## Latest update — 1 November 2026
+
+Clock and navigation contrast, player-name tooltips, radar labels, header
+surfaces, Tactics controls and hover states have been improved. Squad and
+Tactics position colours now match. Numerical radar values can be enabled in
+`custom.uss`. Reload the skin after changing FM Text Scaling.
+
+The public and private installable skins now contain identical files. The
+aligned skin has been accepted in-game; Champions font rendering remains
+unresolved. Only Poppins Regular and Bold are bundled.
+
+For the radar, use Medium or Small information display size on screens above
+1080p. See the [editing guide](skin/README.md#greek-text-and-alternative-fonts)
+for changing the fonts to support Greek; that replacement remains unverified.
