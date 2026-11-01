@@ -3246,3 +3246,36 @@
 #SelectBar #parent-anchor > #active #tactics-picker-focusser > #SIDropdown_SelectRoutine.buttons-dropdown-base-regular .si-dropdown__selection-field {
   background-color: var(--skin-transparent);
 }
+
+/* Role swatches carry position colour on the parent; the split controls are
+ * transparent overlays. Remove their nested outlines and retain the colour
+ * through hover and press instead of painting a neutral rectangle over it. */
+.tactics-visualiser-table .buttons-hybrid-split-button-left-no-background,
+.tactics-visualiser-table .buttons-hybrid-split-button-right-no-background {
+  border-width: var(--global-border-width-none);
+}
+.tactics-visualiser-table .buttons-hybrid-split-button-left-no-background:hover:enabled,
+.tactics-visualiser-table .buttons-hybrid-split-button-right-no-background:hover:enabled {
+  background-color: var(--skin-picked-position-hover-overlay);
+}
+.tactics-visualiser-table .buttons-hybrid-split-button-left-no-background:active:enabled,
+.tactics-visualiser-table .buttons-hybrid-split-button-right-no-background:active:enabled {
+  background-color: var(--skin-picked-position-pressed-overlay);
+}
+
+/* Keep the player picker distinct from its highlighted table row. */
+.tactics-visualiser-table .streamed-table__row:hover .player-cell-button {
+  background-color: var(--skin-control-background);
+}
+.tactics-visualiser-table .streamed-table__row:hover .player-cell-button:hover:enabled {
+  background-color: var(--skin-control-pressed);
+}
+
+/* Squad's compact picked-position field and the tactics table use the same
+ * foreground swatches for each position, including the goalkeeper. */
+.picked_position-border-clip.tactics-visualiser-player-position-type-gk-colour-bg { background-color: var(--colours-tactics-goalkeeper-foreground); }
+.picked_position-border-clip.tactics-visualiser-player-position-type-defenders-colour-bg { background-color: var(--colours-tactics-defender-foreground); }
+.picked_position-border-clip.tactics-visualiser-player-position-type-defensive-midfield-colour-bg { background-color: var(--colours-tactics-defensive-midfield-foreground); }
+.picked_position-border-clip.tactics-visualiser-player-position-type-midfield-colour-bg { background-color: var(--colours-tactics-midfield-foreground); }
+.picked_position-border-clip.tactics-visualiser-player-position-type-attacking-midfield-colour-bg { background-color: var(--colours-tactics-attacking-midfield-foreground); }
+.picked_position-border-clip.tactics-visualiser-player-position-type-striker-colour-bg { background-color: var(--colours-tactics-striker-foreground); }

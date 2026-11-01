@@ -1323,8 +1323,8 @@
 .buttons-button-tactics-picked-position {
   height: 28px;
   margin: 4px 6px 4px 6px;
-  border-width: var(--global-border-width-regular);
-  border-color: var(--skin-border-subtle);
+  border-width: var(--global-border-width-none);
+  border-color: var(--skin-transparent);
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -1340,6 +1340,14 @@
   background-color: var(--skin-transparent);
   border-radius: var(--skin-radius-control);
   transition: background-color var(--global-transition-buttons) var(--global-transition-animation-buttons);
+}
+
+/* Keep the position colour visible under hover and pressed feedback. */
+.buttons-button-tactics-picked-position-hover-element:hover {
+  background-color: var(--skin-picked-position-hover-overlay);
+}
+.buttons-button-tactics-picked-position-hover-element:active {
+  background-color: var(--skin-picked-position-pressed-overlay);
 }
 
 /* Buttons button tactics picked position zero left space.

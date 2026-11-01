@@ -2143,3 +2143,9 @@
 .buttongroup.SegmentedButtonRow .buttongroup__button--active:disabled .game-concepts-focus-ongoing_small {
   -unity-background-image-tint-color: var(--skin-action-disabled-foreground);
 }
+
+/* A highlighted list row otherwise shares the value chip's fill, making the
+ * chip disappear. Keep its edge and label legible when the row is hovered. */
+.streamed-table__row:hover .data-display-data_display-cell-icon-string-transfer-value {
+  background-color: var(--skin-control-pressed);
+}
