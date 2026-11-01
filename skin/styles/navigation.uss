@@ -659,7 +659,8 @@
 .sitext-tooltip-text {
   padding: 4px 8px;
   color: var(--skin-text-primary);
-  -unity-text-generator: advanced;
+  /* The advanced generator renders these loose-font tooltips blank in FM27. */
+  -unity-text-generator: standard;
 }
 
 /* Unity scroll view content container.
