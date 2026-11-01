@@ -92,3 +92,8 @@ runtime evidence, game bundles or development-repository history.
 See [third-party notices](NOTICE.md) and the bundled Poppins font licence.
 This is an independent community skin, not an official Sports Interactive,
 SEGA or UEFA product.
+
+## Text scaling
+
+After changing **Text Scaling** in FM Preferences, reload or reapply the skin
+to apply the new size throughout the interface.

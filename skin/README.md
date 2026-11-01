@@ -204,6 +204,12 @@ names retain a larger entity role. Release-note width, type, spacing and image
 width are separate settings. Long release-note content scrolls within its
 native dialog.
 
+## Text scaling
+
+After changing **Text Scaling** in FM Preferences, reload or reapply the skin
+so the new size is applied throughout the interface. Some text may remain at
+the previous size until the reload. Larger sizes can expose fixed layout limits.
+
 ## Fonts and competition scoreboards
 
 Loose font URLs resolve from the skin root, including URLs declared in imported
