@@ -1881,8 +1881,8 @@
 }
 
 /* Secondary navigation and its shortcuts sit on the same dark top-bar chrome. */
-#SecondaryNavigationBar .secondary-navigation-tab-text,
-#SecondaryNavigationBar .bookmark-label {
+#MenuTitle #SecondaryNavigationBar .secondary-navigation-tab-text,
+#MenuTitle #SecondaryNavigationBar .bookmark-label {
   color: var(--skin-on-media);
   opacity: 1;
 }
