@@ -474,7 +474,7 @@
   --skin-bookmark-border: var(--skin-border-subtle);
   --skin-bookmark-border-width: var(--global-border-width-none);
   --skin-bookmark-focus-border-width: var(--skin-nav-secondary-edge-width);
-  --skin-bookmark-foreground: var(--skin-text-secondary);
+  --skin-bookmark-foreground: var(--skin-on-media);
   --skin-bookmark-overflow-size: var(--interaction-global-height-sm);
   --skin-bookmark-overflow-icon-size: 16px;
   --skin-bookmark-overflow-padding: var(--global-padding-none);
