@@ -236,8 +236,8 @@ Changing the main skin font should not replace every competition's scorebug face
 | Tokens | Purpose |
 | --- | --- |
 | `--skin-club-summary-surface` | Translucent club banner summary cards |
-| `--skin-club-details-scrim` | Backplate behind club title/metadata |
-| `--skin-player-header-content-scrim` | Player identity/metadata backplate, separate from the portrait |
+| `--skin-club-details-scrim` | Club title/metadata backplate, transparent by default |
+| `--skin-player-header-content-scrim` | Player identity/metadata backplate, transparent by default and separate from the portrait |
 | `--skin-club-info-header-scrim`, `--skin-club-info-team-surface` | Club Info metadata and summary surfaces |
 | `--skin-competition-summary-scrim` | Competition summary backplate |
 | `--skin-header-gradient-extension`, `--skin-header-gradient-overlap` | Shared News/competition banner crop |
@@ -250,6 +250,7 @@ Use alpha on summary-card/backplate fills rather than whole-card opacity. This
 lets bound club colour show through while keeping text and icons crisp. The
 player content scrim excludes its sibling portrait. Native club/competition
 colours, kits and badges remain independent of UI branding.
+Light club colours may need a contrasting backplate for readable text.
 
 Solid-looking banners extend the bound gradient beyond a clipped wrapper.
 Extension and overlap pairs must remain equal and opposite; set both to `0px`

@@ -1015,7 +1015,7 @@
 .nav-on-light .dashboard-hud-manager-dropdown-condensed .si-dropdown__selection-field .global-text-primary,
 .nav-on-light .dashboard-hud-manager-dropdown .global-text-primary,
 .nav-on-light .dashboard-hud-manager-dropdown-condensed .global-text-primary {
-  color: var(--global-text-primary);
+  color: var(--skin-text-on-fixed-light);
 }
 
 /* Global text secondary.
@@ -1869,6 +1869,22 @@
 .nav-on-dark .navigation-tab-portal-default-active-true .portal-text.thematic-md {
   -unity-font-definition: var(--skin-font-primary-navigation);
   -unity-font-style: var(--skin-font-primary-navigation-weight);
+  color: var(--skin-on-media);
+  opacity: 1;
+}
+
+/* Primary-bar utility icons share this class with their search label. */
+.nav-on-dark #MainNavigationBar .nd-flat-black {
+  color: var(--skin-on-media);
+  -unity-background-image-tint-color: var(--skin-on-media);
+  opacity: 1;
+}
+
+/* Secondary navigation and its shortcuts sit on the same dark top-bar chrome. */
+#SecondaryNavigationBar .secondary-navigation-tab-text,
+#SecondaryNavigationBar .bookmark-label {
+  color: var(--skin-on-media);
+  opacity: 1;
 }
 
 /* Navigation tab regular default active false.

@@ -5859,7 +5859,7 @@
  * this direct content child. Share the overview's backplate without tinting
  * child artwork or the separate news-story images. */
 #ReportBody #NewsTeamSite #SiteHeaderDynamicItem #BindingExpect > * > .unity-image > .sigradient > #Container.ios-site-header {
-  background-color: var(--skin-club-details-scrim);
+  background-color: var(--skin-club-info-header-scrim);
 }
 /* NewsClubBlock_Large gives this title a native 10% column and an ellipsis
  * utility. Let the larger Poppins metrics wrap at the existing size instead

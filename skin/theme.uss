@@ -239,6 +239,8 @@
    * Read messages stay quieter than unread. Disabled text is a separate role.
    */
   --skin-text-primary: rgb(243, 246, 238);
+  /* Text on fixed light surfaces such as the clock chip. */
+  --skin-text-on-fixed-light: rgba(11, 17, 24, 0.95);
   --skin-text-secondary: rgb(183, 195, 205);
   --skin-text-read-opacity: 0.8;
   --skin-text-read-selected-opacity: 0.88;
@@ -516,10 +518,9 @@
   /* Let club colour show through summary cards without dimming their contents.
    * The dark 75% backplate also supports light club colours. */
   --skin-club-summary-surface: var(--skin-surface-canvas-alpha-75);
-  /* Protect club title/metadata on pale bound colours; artwork stays opaque. */
-  --skin-club-details-scrim: var(--skin-club-summary-surface);
-  /* Support player identity/metadata over pale club paint, without dimming art. */
-  --skin-player-header-content-scrim: var(--skin-club-details-scrim);
+  /* Keep the overview and player title areas continuous with their club colour. */
+  --skin-club-details-scrim: var(--skin-transparent);
+  --skin-player-header-content-scrim: var(--skin-transparent);
   /* Club Info can bind a pale secondary club colour behind white metadata. */
   --skin-club-info-header-scrim: var(--skin-club-summary-surface);
   --skin-club-info-team-surface: var(--skin-club-summary-surface);
