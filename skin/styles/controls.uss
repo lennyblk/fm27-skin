@@ -1144,8 +1144,8 @@
   height: var(--buttons-global-height-regular);
   margin: var(--global-gap-none) var(--global-gap-close);
   padding: var(--global-padding-none);
-  border-width: var(--global-border-width-thin);
-  border-color: var(--skin-data-buttons-button-primary-tactics-border-color);
+  border-width: 0;
+  border-color: var(--skin-transparent);
   background-color: var(--skin-data-buttons-button-primary-tactics-background);
   align-items: center;
   border-radius: var(--skin-radius-control);

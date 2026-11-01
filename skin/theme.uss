@@ -239,8 +239,6 @@
    * Read messages stay quieter than unread. Disabled text is a separate role.
    */
   --skin-text-primary: rgb(243, 246, 238);
-  /* Text on fixed light surfaces such as the clock chip. */
-  --skin-text-on-fixed-light: rgba(11, 17, 24, 0.95);
   --skin-text-secondary: rgb(183, 195, 205);
   --skin-text-read-opacity: 0.8;
   --skin-text-read-selected-opacity: 0.88;
@@ -480,11 +478,15 @@
   --skin-bookmark-overflow-padding: var(--global-padding-none);
 
   /* FONT ROLES
-   * Loose font files use skin-root URLs; competition fonts stay game-owned.
+   * Font files use skin-root URLs. Preserve the role split; no font redesign is part of this cleanup.
    */
-  --skin-font-family-primary: url("fonts/Poppins-Regular.ttf");
+  /* FM Text Scaling only reaches loose fonts declared on its native family tokens, so
+   * the files live there. Change the fonts here; the skin roles below follow. */
+  --typography-family-primary: url("fonts/Poppins-Regular.ttf");
+  --typography-family-thematic: url("fonts/Poppins-Bold.ttf");
+  --skin-font-family-primary: var(--typography-family-primary);
   --skin-font-body: var(--skin-font-family-primary);
-  --skin-font-family-display: url("fonts/Poppins-Bold.ttf");
+  --skin-font-family-display: var(--typography-family-thematic);
   /* Use the installed game's competition fonts; no UEFA font files are shipped. */
   --skin-font-family-champions-scoreboard: var(--ucl-family-regular);
   --skin-font-family-uwcl-scoreboard: var(--uwcl-family-regular);
@@ -492,7 +494,7 @@
   --skin-font-family-condensed: var(--skin-font-family-primary);
   --skin-font-condensed: var(--skin-font-family-condensed);
   --skin-font-family-international: var(--typography-family-international);
-  --skin-font-family-navigation: url("fonts/Poppins-Bold.ttf");
+  --skin-font-family-navigation: var(--typography-family-thematic);
   --skin-font-weight-regular: normal;
   --skin-font-weight-bold: bold;
   --skin-font-weight-italic: italic;
@@ -515,15 +517,14 @@
   /* Club overview uses the same crop; keep this pair equal/opposite too. */
   --skin-club-header-gradient-extension: var(--skin-header-gradient-extension);
   --skin-club-header-gradient-overlap: var(--skin-header-gradient-overlap);
-  /* Let club colour show through summary cards without dimming their contents.
-   * The dark 75% backplate also supports light club colours. */
+  /* Summary cards retain distinct translucent surfaces over the club colour. */
   --skin-club-summary-surface: var(--skin-surface-canvas-alpha-75);
-  /* Keep the overview and player title areas continuous with their club colour. */
+  /* Keep the title and player headers continuous with their club colour. */
   --skin-club-details-scrim: var(--skin-transparent);
   --skin-player-header-content-scrim: var(--skin-transparent);
   /* Club Info can bind a pale secondary club colour behind white metadata. */
-  --skin-club-info-header-scrim: var(--skin-club-summary-surface);
-  --skin-club-info-team-surface: var(--skin-club-summary-surface);
+  --skin-club-info-header-scrim: var(--skin-surface-canvas-alpha-75);
+  --skin-club-info-team-surface: var(--skin-surface-canvas-alpha-75);
   /* Header content scrim preserves bound competition tint beneath readable ink. */
   --skin-competition-summary-scrim: var(--skin-surface-canvas-alpha-75);
 
@@ -641,6 +642,8 @@
   --skin-brand-accent-alpha-35: rgba(171, 239, 37, 0.35);
   --skin-brand-accent-alpha-16: var(--skin-brand-primary-alpha-16);
   --skin-surface-canvas-alpha-95: rgba(11, 17, 24, 0.95);
+  /* Ink on native surfaces that stay pale in every theme, such as the white clock chip. */
+  --skin-text-on-fixed-light: rgba(11, 17, 24, 0.95);
   --skin-surface-canvas-alpha-90: rgba(11, 17, 24, 0.9);
   --skin-surface-canvas-alpha-85: rgba(11, 17, 24, 0.85);
   --skin-surface-canvas-alpha-75: rgba(11, 17, 24, 0.75);

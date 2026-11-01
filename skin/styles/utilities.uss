@@ -2662,3 +2662,28 @@
 .background-color-global-lift-surface-base {
   background-color: var(--global-lift-surface-base);
 }
+
+/* Native gap utilities live in a sheet that loads before the skin, so component margin
+ * resets above beat them. Restore them on base buttons, such as the Tactics header
+ * Intensity, Complexity and Effectiveness buttons. */
+.buttons-button-base-default.margin-right-global-gap-regular {
+  margin-right: var(--global-gap-regular);
+}
+.buttons-button-base-default.margin-right-global-gap-small {
+  margin-right: var(--global-gap-close);
+}
+.buttons-button-base-default.margin-left-global-gap-regular {
+  margin-left: var(--global-gap-regular);
+}
+.buttons-button-base-default.margin-left-global-gap-small {
+  margin-left: var(--global-gap-close);
+}
+
+/* Tactics position pills: centre the label like the native skin. */
+.buttons-button-tactics-picked-position .sitext {
+  -unity-text-align: middle-center;
+  flex-grow: 1;
+}
+.buttons-button-tactics-picked-position * {
+  justify-content: center;
+}

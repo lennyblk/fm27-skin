@@ -224,9 +224,9 @@ Poppins Regular and Bold are included with their
 separate consumers. The independent `--skin-font-size-*` scale covers dense data,
 headings and navigation. Larger text can expose native fixed-height/width limits.
 
-The skin's own body/thematic/condensed aliases point to its chosen faces.
-FM's original primary, thematic, condensed and international resources remain
-game-owned. Competition-specific rules in `styles/match.uss` protect Premier
+The skin maps FM's primary and thematic font tokens to the bundled Poppins
+faces so FM Text Scaling can reach loose skin fonts. Condensed and international
+resources retain their separate roles. Competition-specific rules in `styles/match.uss` protect Premier
 League, EFL, Bundesliga and UEFA scoreboard font families from general heading
 rules. Generic/friendly scoreboards use the native primary font; authored bold
 score/time leaves keep their native bold style. World Cup clock typography uses

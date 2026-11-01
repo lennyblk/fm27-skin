@@ -1,6 +1,6 @@
 /* DUGOUT LIGHT — token-only experiment.
  * Opt in by importing this file immediately after theme.uss in main.uss.
- * Experimental Dugout Light palette, expressed through existing theme roles.
+ * Exact effective Dugout Light roles from the current local desktop UI package.
  * FM data/club/competition colours, media whites, fonts and geometry stay unchanged.
  * HSL channels are converted to explicit RGB for Unity USS.
  */
