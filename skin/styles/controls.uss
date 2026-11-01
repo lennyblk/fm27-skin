@@ -2251,7 +2251,7 @@ buttons-hero-toggle-small--buttons-inactive--border-radius-left:active {
 .buttons-hero-toggle-small--dropdown--border-radius-none:hover,
 .buttons-hero-toggle-small--dropdown--border-radius-right:hover {
   border-color: var(--skin-control-hover);
-  background-color: var(--colours-tactics-base-00);
+  background-color: var(--skin-control-hover);
 }
 
 /* Buttons hero toggle small dropdown border radius none.
