@@ -3279,3 +3279,15 @@
 .picked_position-border-clip.tactics-visualiser-player-position-type-midfield-colour-bg { background-color: var(--colours-tactics-midfield-foreground); }
 .picked_position-border-clip.tactics-visualiser-player-position-type-attacking-midfield-colour-bg { background-color: var(--colours-tactics-attacking-midfield-foreground); }
 .picked_position-border-clip.tactics-visualiser-player-position-type-striker-colour-bg { background-color: var(--colours-tactics-striker-foreground); }
+
+/* The dropdown arrow is a separate split-button half. Its hover must not
+ * merge into the row highlight or change the player-name half's state. */
+.tactics-visualiser-table .streamed-table__row:hover .buttons-hybrid-split-button-right {
+  background-color: var(--skin-control-background);
+}
+.tactics-visualiser-table .streamed-table__row:hover .buttons-hybrid-split-button-right:hover:enabled {
+  background-color: var(--skin-control-pressed);
+}
+.tactics-visualiser-table .streamed-table__row:hover .buttons-hybrid-split-button-right:active:enabled {
+  background-color: var(--skin-control-hover);
+}

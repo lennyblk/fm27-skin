@@ -2,3 +2,10 @@
  * Edit, save, then reload the skin.
  * Use shared theme tokens and preserve game states such as read/unread and disabled.
  */
+
+/* Optional: show FM's numerical values beside player-profile radar labels.
+ * Remove the comment markers around this rule, save and reload the skin.
+.attributespiderchartplayerreport.fmspiderchartlarge #Value {
+  display: flex;
+}
+*/
