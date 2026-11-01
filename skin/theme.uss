@@ -7,12 +7,12 @@
   /* SURFACES
    * Canvas = top bar; page = workspace/second nav; panel/raised/strong = surface layers.
    */
-  --skin-surface-canvas: rgb(11, 17, 24);
-  --skin-surface-page: rgb(19, 27, 37);
-  --skin-surface-navigation: rgb(14, 22, 32);
-  --skin-surface-panel: rgb(24, 32, 43);
-  --skin-surface-raised: rgb(29, 40, 53);
-  --skin-surface-strong: rgb(39, 53, 68);
+  --skin-surface-canvas: rgb(12, 13, 16);
+  --skin-surface-page: rgb(19, 20, 24);
+  --skin-surface-navigation: rgb(15, 16, 20);
+  --skin-surface-panel: rgb(25, 27, 32);
+  --skin-surface-raised: rgb(32, 34, 40);
+  --skin-surface-strong: rgb(42, 45, 52);
 
   /* MATCHDAY: preserve the native paper sheet; retheme surrounding chrome.
    * White coverage mask carries no palette; semantic tint supplies its colour. */
@@ -238,11 +238,11 @@
   /* TEXT AND READ STATE
    * Read messages stay quieter than unread. Disabled text is a separate role.
    */
-  --skin-text-primary: rgb(243, 246, 238);
-  --skin-text-secondary: rgb(183, 195, 205);
+  --skin-text-primary: rgb(243, 243, 247);
+  --skin-text-secondary: rgb(188, 190, 198);
   --skin-text-read-opacity: 0.8;
   --skin-text-read-selected-opacity: 0.88;
-  --skin-text-disabled: rgb(155, 169, 181);
+  --skin-text-disabled: rgb(156, 160, 170);
   /* Unknown/no-data grades are information, not disabled controls. Keep them
    * neutral and secondary while remaining readable on hovered report rows. */
   --skin-grade-unknown-foreground: var(--skin-text-secondary);
@@ -253,11 +253,11 @@
   /* CONTROLS, SELECTION AND BRAND
    * Keep filled action/selection states paired with their foreground through every state.
    */
-  --skin-border-default: rgb(71, 85, 98);
-  --skin-border-subtle: rgb(52, 66, 81);
-  --skin-control-background: rgb(39, 53, 68);
-  --skin-control-hover: rgb(48, 66, 84);
-  --skin-control-pressed: rgb(58, 78, 100);
+  --skin-border-default: rgb(72, 75, 84);
+  --skin-border-subtle: rgb(52, 55, 63);
+  --skin-control-background: rgb(42, 45, 52);
+  --skin-control-hover: rgb(52, 55, 64);
+  --skin-control-pressed: rgb(63, 66, 77);
   /* Ordinary editable fields share neutral control paint. Text selection uses
    * a translucent neutral highlight: FM draws it over the selected glyphs. */
   --skin-field-background: var(--skin-control-background);
@@ -315,11 +315,11 @@
   --skin-selection-hover: var(--skin-brand-primary-hover);
   --skin-selection-pressed: var(--skin-brand-primary-pressed);
   --skin-selection-foreground: var(--skin-brand-on-primary);
-  --skin-focus-ring: rgb(207, 255, 102);
-  --skin-brand-primary: rgb(171, 239, 37);
-  --skin-brand-primary-hover: rgb(189, 243, 89);
-  --skin-brand-on-primary: rgb(20, 30, 10);
-  --skin-brand-primary-pressed: rgb(143, 205, 19);
+  --skin-focus-ring: rgb(205, 180, 255);
+  --skin-brand-primary: rgb(167, 123, 255);
+  --skin-brand-primary-hover: rgb(186, 150, 255);
+  --skin-brand-on-primary: rgb(22, 12, 38);
+  --skin-brand-primary-pressed: rgb(143, 96, 235);
   --skin-brand-accent: var(--skin-brand-primary);
   --skin-brand-accent-soft: var(--skin-brand-accent);
   --skin-action-primary-background: var(--skin-brand-primary);
@@ -330,8 +330,8 @@
   --skin-action-disabled-background: var(--skin-surface-strong);
   --skin-action-disabled-foreground: var(--skin-text-disabled);
   --skin-action-disabled-border: var(--skin-border-subtle);
-  --skin-control-border: rgb(99, 121, 140);
-  --skin-selection-muted: rgb(44, 55, 68);
+  --skin-control-border: rgb(104, 108, 120);
+  --skin-selection-muted: rgb(46, 48, 56);
   /* Ordinary report cards use surface depth; floating dialogs keep their
    * separate outline role. Data-list selection stays neutral, unlike buttons. */
   --skin-card-border-width: 0px;
@@ -619,46 +619,46 @@
   /* ADVANCED: MATCHING ALPHA COLOURS
    * Explicit RGBA companions. If the matching opaque colour changes, update its RGB channels here too.
    */
-  --skin-brand-primary-alpha-08: rgba(171, 239, 37, 0.08);
-  --skin-brand-primary-alpha-16: rgba(171, 239, 37, 0.16);
-  --skin-brand-primary-alpha-70: rgba(171, 239, 37, 0.7);
-  --skin-brand-primary-alpha-00: rgba(171, 239, 37, 0);
-  --skin-brand-accent-alpha-40: rgba(171, 239, 37, 0.4);
-  --skin-surface-page-alpha-60: rgba(19, 27, 37, 0.6);
-  --skin-surface-page-alpha-70: rgba(19, 27, 37, 0.7);
-  --skin-surface-page-alpha-100: rgba(19, 27, 37, 1);
-  --skin-brand-accent-alpha-20: rgba(171, 239, 37, 0.2);
+  --skin-brand-primary-alpha-08: rgba(167, 123, 255, 0.08);
+  --skin-brand-primary-alpha-16: rgba(167, 123, 255, 0.16);
+  --skin-brand-primary-alpha-70: rgba(167, 123, 255, 0.7);
+  --skin-brand-primary-alpha-00: rgba(167, 123, 255, 0);
+  --skin-brand-accent-alpha-40: rgba(167, 123, 255, 0.4);
+  --skin-surface-page-alpha-60: rgba(19, 20, 24, 0.6);
+  --skin-surface-page-alpha-70: rgba(19, 20, 24, 0.7);
+  --skin-surface-page-alpha-100: rgba(19, 20, 24, 1);
+  --skin-brand-accent-alpha-20: rgba(167, 123, 255, 0.2);
   --skin-brand-accent-alpha-08: var(--skin-brand-primary-alpha-08);
-  --skin-surface-page-alpha-05: rgba(19, 27, 37, 0.05);
-  --skin-surface-page-alpha-72: rgba(19, 27, 37, 0.72);
-  --skin-surface-page-alpha-76: rgba(19, 27, 37, 0.76);
-  --skin-surface-page-alpha-80: rgba(19, 27, 37, 0.8);
-  --skin-surface-page-alpha-85: rgba(19, 27, 37, 0.85);
-  --skin-brand-primary-hover-alpha-00: rgba(189, 243, 89, 0);
+  --skin-surface-page-alpha-05: rgba(19, 20, 24, 0.05);
+  --skin-surface-page-alpha-72: rgba(19, 20, 24, 0.72);
+  --skin-surface-page-alpha-76: rgba(19, 20, 24, 0.76);
+  --skin-surface-page-alpha-80: rgba(19, 20, 24, 0.8);
+  --skin-surface-page-alpha-85: rgba(19, 20, 24, 0.85);
+  --skin-brand-primary-hover-alpha-00: rgba(186, 150, 255, 0);
   --skin-feedback-danger-surface-alpha-00: rgba(73, 44, 53, 0);
   --skin-feedback-danger-alpha-00: rgba(255, 153, 167, 0);
-  --skin-surface-page-alpha-65: rgba(19, 27, 37, 0.65);
-  --skin-surface-page-alpha-35: rgba(19, 27, 37, 0.35);
-  --skin-brand-accent-alpha-35: rgba(171, 239, 37, 0.35);
+  --skin-surface-page-alpha-65: rgba(19, 20, 24, 0.65);
+  --skin-surface-page-alpha-35: rgba(19, 20, 24, 0.35);
+  --skin-brand-accent-alpha-35: rgba(167, 123, 255, 0.35);
   --skin-brand-accent-alpha-16: var(--skin-brand-primary-alpha-16);
-  --skin-surface-canvas-alpha-95: rgba(11, 17, 24, 0.95);
+  --skin-surface-canvas-alpha-95: rgba(12, 13, 16, 0.95);
   /* Ink on native surfaces that stay pale in every theme, such as the white clock chip. */
-  --skin-text-on-fixed-light: rgba(11, 17, 24, 0.95);
-  --skin-surface-canvas-alpha-90: rgba(11, 17, 24, 0.9);
-  --skin-surface-canvas-alpha-85: rgba(11, 17, 24, 0.85);
-  --skin-surface-canvas-alpha-75: rgba(11, 17, 24, 0.75);
-  --skin-surface-canvas-alpha-65: rgba(11, 17, 24, 0.65);
-  --skin-surface-canvas-alpha-56: rgba(11, 17, 24, 0.56);
-  --skin-surface-canvas-alpha-48: rgba(11, 17, 24, 0.48);
-  --skin-surface-canvas-alpha-40: rgba(11, 17, 24, 0.4);
-  --skin-surface-canvas-alpha-35: rgba(11, 17, 24, 0.35);
-  --skin-surface-canvas-alpha-32: rgba(11, 17, 24, 0.32);
-  --skin-surface-canvas-alpha-20: rgba(11, 17, 24, 0.2);
-  --skin-surface-canvas-alpha-16: rgba(11, 17, 24, 0.16);
-  --skin-surface-canvas-alpha-14: rgba(11, 17, 24, 0.14);
-  --skin-surface-canvas-alpha-12: rgba(11, 17, 24, 0.12);
-  --skin-surface-canvas-alpha-08: rgba(11, 17, 24, 0.08);
-  --skin-surface-canvas-alpha-04: rgba(11, 17, 24, 0.04);
+  --skin-text-on-fixed-light: rgba(12, 13, 16, 0.95);
+  --skin-surface-canvas-alpha-90: rgba(12, 13, 16, 0.9);
+  --skin-surface-canvas-alpha-85: rgba(12, 13, 16, 0.85);
+  --skin-surface-canvas-alpha-75: rgba(12, 13, 16, 0.75);
+  --skin-surface-canvas-alpha-65: rgba(12, 13, 16, 0.65);
+  --skin-surface-canvas-alpha-56: rgba(12, 13, 16, 0.56);
+  --skin-surface-canvas-alpha-48: rgba(12, 13, 16, 0.48);
+  --skin-surface-canvas-alpha-40: rgba(12, 13, 16, 0.4);
+  --skin-surface-canvas-alpha-35: rgba(12, 13, 16, 0.35);
+  --skin-surface-canvas-alpha-32: rgba(12, 13, 16, 0.32);
+  --skin-surface-canvas-alpha-20: rgba(12, 13, 16, 0.2);
+  --skin-surface-canvas-alpha-16: rgba(12, 13, 16, 0.16);
+  --skin-surface-canvas-alpha-14: rgba(12, 13, 16, 0.14);
+  --skin-surface-canvas-alpha-12: rgba(12, 13, 16, 0.12);
+  --skin-surface-canvas-alpha-08: rgba(12, 13, 16, 0.08);
+  --skin-surface-canvas-alpha-04: rgba(12, 13, 16, 0.04);
   --skin-on-media-alpha-90: rgba(255, 255, 255, 0.9);
   --skin-on-media-alpha-85: rgba(255, 255, 255, 0.85);
   --skin-on-media-alpha-75: rgba(255, 255, 255, 0.75);
@@ -674,40 +674,40 @@
   --skin-on-media-alpha-12: rgba(255, 255, 255, 0.12);
   --skin-on-media-alpha-08: rgba(255, 255, 255, 0.08);
   --skin-on-media-alpha-04: rgba(255, 255, 255, 0.04);
-  --skin-surface-canvas-alpha-70: rgba(11, 17, 24, 0.7);
-  --skin-surface-canvas-alpha-60: rgba(11, 17, 24, 0.6);
-  --skin-surface-canvas-alpha-55: rgba(11, 17, 24, 0.55);
+  --skin-surface-canvas-alpha-70: rgba(12, 13, 16, 0.7);
+  --skin-surface-canvas-alpha-60: rgba(12, 13, 16, 0.6);
+  --skin-surface-canvas-alpha-55: rgba(12, 13, 16, 0.55);
   --skin-on-media-alpha-18: rgba(255, 255, 255, 0.18);
   --skin-on-media-alpha-06: rgba(255, 255, 255, 0.06);
   --skin-on-media-alpha-25: rgba(255, 255, 255, 0.25);
   --skin-on-media-alpha-11: rgba(255, 255, 255, 0.11);
   --skin-on-media-alpha-13: rgba(255, 255, 255, 0.13);
   --skin-on-media-alpha-80: rgba(255, 255, 255, 0.8);
-  --skin-surface-canvas-alpha-30: rgba(11, 17, 24, 0.3);
+  --skin-surface-canvas-alpha-30: rgba(12, 13, 16, 0.3);
   --skin-on-media-alpha-89: rgba(255, 255, 255, 0.89);
   --skin-on-media-alpha-60: rgba(255, 255, 255, 0.6);
-  --skin-surface-panel-alpha-75: rgba(24, 32, 43, 0.75);
-  --skin-surface-canvas-alpha-58: rgba(11, 17, 24, 0.58);
+  --skin-surface-panel-alpha-75: rgba(25, 27, 32, 0.75);
+  --skin-surface-canvas-alpha-58: rgba(12, 13, 16, 0.58);
   --skin-on-media-alpha-62: rgba(255, 255, 255, 0.62);
   --skin-on-media-alpha-21: rgba(255, 255, 255, 0.21);
   --skin-on-media-alpha-10: rgba(255, 255, 255, 0.1);
-  --skin-surface-canvas-alpha-94: rgba(11, 17, 24, 0.94);
-  --skin-surface-canvas-alpha-50: rgba(11, 17, 24, 0.5);
+  --skin-surface-canvas-alpha-94: rgba(12, 13, 16, 0.94);
+  --skin-surface-canvas-alpha-50: rgba(12, 13, 16, 0.5);
   --skin-on-media-alpha-50: rgba(255, 255, 255, 0.5);
-  --skin-surface-page-alpha-20: rgba(19, 27, 37, 0.2);
-  --skin-surface-panel-alpha-14: rgba(24, 32, 43, 0.14);
-  --skin-surface-page-alpha-16: rgba(19, 27, 37, 0.16);
+  --skin-surface-page-alpha-20: rgba(19, 20, 24, 0.2);
+  --skin-surface-panel-alpha-14: rgba(25, 27, 32, 0.14);
+  --skin-surface-page-alpha-16: rgba(19, 20, 24, 0.16);
   --skin-on-media-alpha-07: rgba(255, 255, 255, 0.07);
   --skin-on-media-alpha-84: rgba(255, 255, 255, 0.84);
-  --skin-surface-page-alpha-56: rgba(19, 27, 37, 0.56);
+  --skin-surface-page-alpha-56: rgba(19, 20, 24, 0.56);
   --skin-on-media-alpha-15: rgba(255, 255, 255, 0.15);
-  --skin-surface-page-alpha-90: rgba(19, 27, 37, 0.9);
-  --skin-surface-canvas-alpha-45: rgba(11, 17, 24, 0.45);
-  --skin-surface-page-alpha-40: rgba(19, 27, 37, 0.4);
-  --skin-surface-canvas-alpha-25: rgba(11, 17, 24, 0.25);
-  --skin-surface-panel-alpha-10: rgba(24, 32, 43, 0.1);
-  --skin-surface-panel-alpha-20: rgba(24, 32, 43, 0.2);
+  --skin-surface-page-alpha-90: rgba(19, 20, 24, 0.9);
+  --skin-surface-canvas-alpha-45: rgba(12, 13, 16, 0.45);
+  --skin-surface-page-alpha-40: rgba(19, 20, 24, 0.4);
+  --skin-surface-canvas-alpha-25: rgba(12, 13, 16, 0.25);
+  --skin-surface-panel-alpha-10: rgba(25, 27, 32, 0.1);
+  --skin-surface-panel-alpha-20: rgba(25, 27, 32, 0.2);
   --skin-on-media-alpha-02: rgba(255, 255, 255, 0.02);
-  --skin-surface-page-alpha-14: rgba(19, 27, 37, 0.14);
+  --skin-surface-page-alpha-14: rgba(19, 20, 24, 0.14);
   --skin-on-media-alpha-34: rgba(255, 255, 255, 0.34);
 }
